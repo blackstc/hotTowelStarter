@@ -262,7 +262,3 @@ The `blocks.router` module contains a routing helper module that assists in addi
     --type=major
     --type=pre
     --ver=1.2.3 // specific version
-
-## License
-
-MIT
