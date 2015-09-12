@@ -28,17 +28,7 @@
 </head>
 <body>
     <div>
-        <div ng-include="'app/layout/shell.html'"></div>
-        <div id="splash-page" ng-show="showSplash">
-            <div class="page-splash">
-                <div class="page-splash-message">
-                    helloWorld
-                </div>
-                <div class="progress progress-striped active page-progress-bar">
-                    <div class="bar"></div>
-                </div>
-            </div>
-        </div>
+        <div ng-include="'app/controllers/shell/shell.html'"></div>
     </div>
 
     <!-- build:js js/lib.js -->
@@ -61,36 +51,38 @@
     <script src="/src/client/app/blocks/exception/exception.module.js"></script>
     <script src="/src/client/app/blocks/logger/logger.module.js"></script>
     <script src="/src/client/app/blocks/router/router.module.js"></script>
-    <script src="/src/client/app/components/components.module.js"></script>
-    <script src="/src/client/app/components/container/container.module.js"></script>
-    <script src="/src/client/app/components/news/news.module.js"></script>
-    <script src="/src/client/app/components/people/people.module.js"></script>
+    <script src="/src/client/app/controllers/admin/admin.module.js"></script>
+    <script src="/src/client/app/controllers/controllers.module.js"></script>
+    <script src="/src/client/app/controllers/dashboard/dashboard.module.js"></script>
+    <script src="/src/client/app/controllers/shell/shell.module.js"></script>
+    <script src="/src/client/app/controllers/sidebar/sidebar.module.js"></script>
     <script src="/src/client/app/core/core.module.js"></script>
-    <script src="/src/client/app/features/admin/admin.module.js"></script>
-    <script src="/src/client/app/features/dashboard/dashboard.module.js"></script>
-    <script src="/src/client/app/layout/layout.module.js"></script>
-    <script src="/src/client/app/widgets/widgets.module.js"></script>
+    <script src="/src/client/app/directives/container/container.module.js"></script>
+    <script src="/src/client/app/directives/directives.module.js"></script>
+    <script src="/src/client/app/directives/navbar/navbar.module.js"></script>
+    <script src="/src/client/app/directives/news/news.module.js"></script>
+    <script src="/src/client/app/directives/people/people.module.js"></script>
+    <script src="/src/client/app/directives/sidebar/sidebar.module.js"></script>
+    <script src="/src/client/app/services/services.module.js"></script>
     <script src="/src/client/app/blocks/exception/exception-handler.provider.js"></script>
     <script src="/src/client/app/blocks/exception/exception.js"></script>
     <script src="/src/client/app/blocks/logger/logger.js"></script>
     <script src="/src/client/app/blocks/router/router-helper.provider.js"></script>
-    <script src="/src/client/app/components/container/container.directive.js"></script>
-    <script src="/src/client/app/components/news/news.directive.js"></script>
-    <script src="/src/client/app/components/people/people.direcitve.js"></script>
+    <script src="/src/client/app/controllers/admin/admin.controller.js"></script>
+    <script src="/src/client/app/controllers/admin/admin.route.js"></script>
+    <script src="/src/client/app/controllers/dashboard/dashboard.controller.js"></script>
+    <script src="/src/client/app/controllers/dashboard/dashboard.route.js"></script>
+    <script src="/src/client/app/controllers/shell/shell.controller.js"></script>
+    <script src="/src/client/app/controllers/sidebar/sidebar.controller.js"></script>
     <script src="/src/client/app/core/config.js"></script>
     <script src="/src/client/app/core/constants.js"></script>
     <script src="/src/client/app/core/core.route.js"></script>
-    <script src="/src/client/app/core/dataservice.js"></script>
-    <script src="/src/client/app/features/admin/admin.controller.js"></script>
-    <script src="/src/client/app/features/admin/admin.route.js"></script>
-    <script src="/src/client/app/features/dashboard/dashboard.controller.js"></script>
-    <script src="/src/client/app/features/dashboard/dashboard.route.js"></script>
-    <script src="/src/client/app/layout/ht-sidebar.directive.js"></script>
-    <script src="/src/client/app/layout/ht-top-nav.directive.js"></script>
-    <script src="/src/client/app/layout/shell.controller.js"></script>
-    <script src="/src/client/app/layout/sidebar.controller.js"></script>
-    <script src="/src/client/app/widgets/ht-img-person.directive.js"></script>
-    <script src="/src/client/app/widgets/ht-widget-header.directive.js"></script>
+    <script src="/src/client/app/directives/container/container.directive.js"></script>
+    <script src="/src/client/app/directives/navbar/navbar.directive.js"></script>
+    <script src="/src/client/app/directives/news/news.directive.js"></script>
+    <script src="/src/client/app/directives/people/people.direcitve.js"></script>
+    <script src="/src/client/app/directives/sidebar/sidebar.directive.js"></script>
+    <script src="/src/client/app/services/dataservice.js"></script>
     <!-- endinject -->
 
     <!-- inject:templates:js -->

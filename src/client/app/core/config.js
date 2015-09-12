@@ -14,7 +14,7 @@
 
     var config = {
         appErrorPrefix: '[helloWorld Error] ',
-        appTitle: 'helloWorld'
+        appTitle: 'Blog Post Bidder'
     };
 
     core.value('config', config);

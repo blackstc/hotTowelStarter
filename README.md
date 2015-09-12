@@ -38,7 +38,7 @@ Create new folders to organize code into:
 #### Files to create
 
 src/client/app/components
-- components.module.js
+- directives.module.js
 
 - src/client/app/components/people
 people.directive.js
@@ -46,7 +46,7 @@ people.directive.spec.js
 people.html
 people.module.js
 
-#### components.module.js
+#### directives.module.js
 Defines the components module and allows us to enable and disable components as desired
 ```
 (function() {
