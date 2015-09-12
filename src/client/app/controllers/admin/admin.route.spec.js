@@ -2,7 +2,7 @@
 describe('admin routes', function () {
     describe('state', function () {
         var controller;
-        var view = 'app/features/admin/admin.html';
+        var view = 'app/controllers/admin/admin.html';
 
         beforeEach(function() {
             module('app.controllers.admin', bard.fakeToastr);

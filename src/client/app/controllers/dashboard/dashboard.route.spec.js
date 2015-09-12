@@ -2,13 +2,20 @@
 describe('dashboard routes', function () {
     describe('state', function () {
         var controller,
-            view = 'app/features/dashboard/dashboard.html',
+            view = 'app/controllers/dashboard/dashboard.html',
             people = mockData.getMockPeople();
 
         beforeEach(function() {
-            module('app.controllers.dashboard', bard.fakeToastr);
-            bard.inject('$httpBackend', '$location', '$rootScope', '$state', '$q',
-                '$templateCache', 'dataservice');
+            module('app.controllers.dashboard', 'app.services', bard.fakeToastr);
+            bard.inject(
+                '$httpBackend',
+                '$location',
+                '$rootScope',
+                '$state',
+                '$q',
+                '$templateCache',
+                'dataservice'
+            );
         });
 
         beforeEach(function() {

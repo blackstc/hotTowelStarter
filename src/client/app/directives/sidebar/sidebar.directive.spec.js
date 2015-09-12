@@ -1,13 +1,13 @@
 /* jshint -W117, -W030 */
 /* jshint multistr:true */
-describe('htSidebar directive: ', function () {
+describe('Directive: sidebar', function () {
     var dropdownElement;
     var el;
     var innerElement;
     var isOpenClass = 'dropy';
     var scope;
 
-    beforeEach(module('app.layout'));
+    beforeEach(module('app.directives.sidebar'));
 
     beforeEach(inject(function($compile, $rootScope) {
         // The minimum necessary template HTML for this spec.

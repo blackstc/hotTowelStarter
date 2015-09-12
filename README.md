@@ -150,6 +150,15 @@ The `blocks.router` module contains a routing helper module that assists in addi
 
     Runs a watch to run all unit tests and midway tests. Cranks up a second node process to run a server for the midway tests to hit a web api.
 
+#### Coverage report
+After running `gulp test` a coverage report can viewed by opening this index.html file.
+
+	/
+		/report
+			/coverage
+			    /report-html
+                    index.html
+
 ### Cleaning Up
 
 - `gulp clean`
